@@ -10,10 +10,9 @@
             padding: 0;
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
+            box-sizing:border-box;
         }
-        body{
-            height: 100vh;
-        }
+       
         table,th,td
 {
     border-collapse: collapse;
@@ -67,15 +66,15 @@ td
 }
 .btns_prnt{
     width: 100%;
-    text-align: center;
+    text-align: start;
     background-color: rgba(240, 248, 255, 0);
     border: none;
-    padding: 6px;
+    /* padding: 6px; */
 
 }
 .btns_prnt:hover{
     background-color:orange;
-    color: white;
+    color: rgb(15, 14, 14);
 }
 
 .btns_prnt2{
@@ -84,6 +83,7 @@ td
     background-color: rgba(240, 248, 255, 0);
     border: none;
     padding: 3px;
+    text-decoration: none;
 
 }
 .btns_prnt2:hover{
@@ -96,6 +96,7 @@ td
     background-color: rgba(240, 248, 255, 0);
     border: none;
     padding: 6px;
+    
 
 }
 .btns_2:hover{
@@ -106,6 +107,7 @@ td
 
 .bg-model {
 	background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px);
 
 	width: 100%;
 	height: 100%;
@@ -138,25 +140,59 @@ td
 .close:hover {
 		color: rgb(255, 128, 0);
 	}
+    .moreText {
+  display: none;
+}
+.text.show-more .moreText {
+  display:inline;
+  text-decoration: none;
+}
+.nodec{
+    text-decoration: none;
+}
     </style>
 </head>
 <body>
-    <h5 style="color: rgb(0, 0, 65); background-color: rgb(142, 211, 250);padding: 5px;">Gateway Tally</h5>
-    <div style=" display:flex; height: 100%;">
-    <div style="border-right: .5px solid rgb(218, 218, 218); width:47%;  height: 100%; ">
-      <div style="display:flex; padding: 25px;">
-        <div style="width: 50%;">
-          <p style="color: rgb(0, 104, 214);padding:5px; font-size: 12px;">CURRENT PERIOD</p>
-          <h5 style="padding:5px;">1-Apr-22 to 31-March-23</h5>
+    <div style="height: 100vh;">
+        <h5 style="color: rgb(0, 0, 65); background-color: rgb(142, 211, 250);padding: 5px; height:3%;">Chart Of Accounts</h5>
+    <div style=" display:flex; height: 97%;">
+    <div style="border-right: .5px solid rgb(218, 218, 218); width:100%;  height: 100%; ">
+       
+        <div style="display:flex; padding: 25px;">
+        
+        <div style="width: 50%; text-align: start;">
+          <h5 style="color: black; font-size: 16px; height: 3%;">List Of Groups</h5>
+          <!-- <h5 style="padding:5px;">1-Apr-22 to 31-March-23</h5> -->
 
       </div>
       <div style="width: 50%; text-align: end;">
-        <p style="color: rgb(0, 104, 214); padding:5px;font-size: 12px;">CURRENT DATE</p>
-        <h5 style="padding:5px;">Friday,1-Apr-22</h5>
+        <h5 style="color: black; padding:5px;font-size: 16px;">For 1-Apr-22</h5>
+        <!-- <h5 style="padding:5px;">Friday,1-Apr-22</h5> -->
 
       </div>
       </div>
-<table >
+      <hr></hr>
+      
+      <a href="branch"><button  class="btns_prnt" id="create"><h3>Branchs / Divisions</h3></button></a>
+      <a href="branch"><button  class="btns_prnt" id="create"><h3>Capital Account</h3></button></a>
+      <a href="branch"> <button  class="btns_prnt" id="create"><h3>Current Assets</h3></button></a>
+      <a href="branch"><button  class="btns_prnt" id="create"><h3>Current Liabilities</h3></button></a>
+      <a href="branch"><button  class="btns_prnt" id="create"><h3>Direct Expenses</h3></button></a>
+      <a href="branch"><button  class="btns_prnt" id="create"><h3>Direct Incomes</h3></button></a>
+      <a href="branch"><button  class="btns_prnt" id="create"><h3>Fixed Assets</h3></button></a>
+      <a href="branch"><button  class="btns_prnt" id="create"><h3>Indirect Expenses</h3></button></a>
+      <a href="branch"><button  class="btns_prnt" id="create"><h3>Indirect Incomes</h3></button></a>
+      <a href="branch"><button  class="btns_prnt" id="create"><h3>Investments</h3></button></a>
+      <a href="branch"><button  class="btns_prnt" id="create"><h3>Loans(Liability)</h3></button></a>
+      <a href="branch"><button  class="btns_prnt" id="create"><h3>Misc. Expenses(ASSET)</h3></button></a>
+      <a href="branch"><button  class="btns_prnt" id="create"><h3>Purchase Accounts</h3></button></a>
+      <a href="branch"><button  class="btns_prnt" id="create"><h3>Sales Accounts</h3></button></a>
+      <a href="branch"><button  class="btns_prnt" id="create"><h3>Suspense A/C</h3></button></a>
+
+
+
+
+<!-- <table >
     <thead>
         <tr>
         <th>NAME OF COMPANY</th>
@@ -166,7 +202,7 @@ td
     </thead>
     <tbody>
         <tr>
-            <td>Abcdefg</td>
+            <td>VRU Technologies</td>
             <td>No Vouchers entered</td>
            
         </tr>
@@ -176,17 +212,16 @@ td
 
     </div>
     
-    <div style=" width:47%; height: 100%" class="lists">
+    <div style=" width:47%; height: 100%">
+        
+        <div  class="lists" style=" width:100%; height: 100%">
         <div style="width: 50%; padding: ; height: auto; border:1px solid  rgb(177, 203, 225);background-color: rgb(222, 242, 255);">
            <h5 style="background-color:rgb(27, 117, 173) ; color:white; text-align: center; padding: 8px;">Gateway  of Tally</h5>
            <div style="margin-bottom:10px ;">
            <p class="titles">MASTERS</p>
-           <!-- <button  class="btns_prnt" id="create">Create</button> -->
-           <a href="#"><button  class="btns_prnt">Create</button></a>
+           <button  class="btns_prnt" id="create">Create</button>
            <a href="#"><button  class="btns_prnt">Alter</button></a>
-           <button  class="btns_prnt" id="charts">Charts of accounts</button>
-
-           <!-- <a href="#"><button  class="btns_prnt">Charts of accounts</button></a> -->
+           <a href="#"><button  class="btns_prnt">Charts of accounts</button></a>
            <p class="titles">TRANSACTIONS</p>
            <a href="#"><button  class="btns_prnt">Vouchers</button></a>
            <a href="#"><button  class="btns_prnt">Day Book</button></a>
@@ -202,6 +237,7 @@ td
         </div>
         </div>
     </div>
+    </div>
     <div style=" width:6%; background-color: rgb(142, 211, 250);height: 100%"></div>
 </div>
 <div class="bg-model">
@@ -209,40 +245,53 @@ td
         <div class="close">+</div>
         <h5 style="background-color:rgb(115, 201, 255) ; color:white; text-align: center; padding: 8px;">MASTER CREATION</h5>
         <h5 style="background-color:rgb(27, 117, 173) ; color:white; text-align: start; padding: 8px;">List of Masters</h5>
-        <div style="margin-bottom:10px ;">
+        <div style="margin-bottom:10px ;" class="text">
         <a href="#"><button  class="btns_2">Change Company</button></a>
-        <a href="#"><button  class="btns_2" style="padding: 6px;">show more</button></a>
+        <button  class="btns_2 read-more-btn " style="padding: 6px;">Show more</button>
         <h6 class="titles2">Accounting Masters</h6>
-        <a href="group"><button  class="btns_prnt2">Groups</button></a>
-        <a href="ledger"><button  class="btns_prnt2">Ledgers</button></a>
-        <a href="#"><button  class="btns_prnt2">Voucher Types </button></a>
-        <a href="#"><button  class="btns_prnt2">Currencies</button></a>
-        <a href="#"><button  class="btns_prnt2">Budgets</button></a>
-        <a href="#"><button  class="btns_prnt2">Scenarios</button></a>
-        <!-- <a href="#"><button  class="btns_prnt2">Credit Limits</button></a> -->
+        <a href="load_create_groups"><button  class="btns_prnt2">Group</button></a>
+        <a href="load_create_ledgers"><button  class="btns_prnt2">Ledger</button></a>
+        <a href="#"><button  class="btns_prnt2">Currency </button></a>
+        <a href="#" class="nodec"><button  class="btns_prnt2 moreText">Budget</button></a>
+        <a href="#" class="nodec"><button  class="btns_prnt2 moreText">Scenario</button></a>
+        <a href="#"><button  class="btns_prnt2">Voucher Type</button></a>
+        <a href="#" class="nodec"><button  class="btns_prnt2 moreText">Credit Limits</button></a>
         <h6 class="titles2">Inventory Masters</h6>
-        <a href="#"><button  class="btns_prnt2">Stock groups</button></a>
-        <a href="#"><button  class="btns_prnt2">Stock Items</button></a>
-        <a href="#"><button  class="btns_prnt2">Stock Categories</button></a>
-        <a href="#"><button  class="btns_prnt2">Units</button></a>
-        <a href="#"><button  class="btns_prnt2">Godowns</button></a>
-        <!-- <h6 class="titles2">Statutory Details</h6>
+        <a href="#"><button  class="btns_prnt2">Stock group</button></a>
+        <a href="#"><button  class="btns_prnt2">Stock Category</button></a>
+        <a href="#"><button  class="btns_prnt2">Stock Item</button></a>
+        <a href="#"><button  class="btns_prnt2">Unit</button></a>
+        <a href="#"><button  class="btns_prnt2">Godown</button></a>
+        <h6 class="titles2">Statutory Details</h6>
         <a href="#"><button  class="btns_prnt2">GST Details</button></a>
         <a href="#"><button  class="btns_prnt2">PAN/CIN Details</button></a>
-         -->
+        
      </div>
      </div>
 
 </div>
 <script>
-    document.getElementById('charts').addEventListener("click", function() {
+    document.getElementById('create').addEventListener("click", function() {
 	document.querySelector('.bg-model').style.display = "flex";
 });
 
 document.querySelector('.close').addEventListener("click", function() {
 	document.querySelector('.bg-model').style.display = "none";
 });
-</script>
-    
+
+
+const readMoreBtn = document.querySelector(".read-more-btn");
+const text = document.querySelector(".text");
+
+readMoreBtn.addEventListener("click", (e) => {
+  text.classList.toggle("show-more");
+  if (readMoreBtn.innerText === "Show more") {
+    readMoreBtn.innerText = "Show less";
+  } else if(readMoreBtn.innerText === "Show less"){
+    readMoreBtn.innerText = "Show more";
+  }
+});
+</script> -->
+</div>
 </body>
 </html>
