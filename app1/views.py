@@ -33,4 +33,15 @@ def vouchpage(request):
     return render(request, 'vouchpage.html')
 
 
+def load_stock_group(request):
+    return render(request,'stock_group.html')
 
+
+def load_stock_catagory(request):
+    return render(request,'stock_catagory.html')
+
+def load_unit_creation(request):
+    return render(request,'unit_creation.html')
+
+def load_stock_item(request):
+    return render(request,'stock_item.html')

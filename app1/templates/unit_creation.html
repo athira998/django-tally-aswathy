@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<body>
+  <div class="row">
+    <h1 style="text-align:center;">Unit Creation</h1>
+  </div>
+    <form>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Type :</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputEmail3" value="simple">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputPassword3" class="col-sm-2 col-form-label">Symbol :</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPassword3">
+          </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Formal name :</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputPassword3">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Number of decimal places :</label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control" id="inputPassword3">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Unit Quantity Code (UQC):</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Not aplicable</option>
+              <option>BAG-BAGS</option>
+              <option>BAL-BALE</option>
+              <option>BDL-BUNDLES</option>
+              <option>BKL-BUCKLES</option>
+              <option>BOU-BILLION OF UNITS</option>
+              <option>BOX-BOX</option>
+              <option>BTL-BOTTLES</option>
+              <option>BUN-BUNCHES</option>
+              <option>CAN-CANS</option>
+              <option>CBM-CUBIC METERS</option>
+              <option>CCM-CUBIC CENTIMETERS</option>
+              <option>CMS-CENTIMETERS</option>
+              <option>CTN-CARTONS</option>
+              <option>DOZ-DOZEN</option>
+              <option>DRM-DRUMS</option>
+              <option>GGK-GREAT GROSS</option>
+              <option>GYD-GROSS-YARDS</option>
+              <option>KGS-KILOGRAMS</option>
+              <option>KLR-KILOLITER</option>
+              <option>KME-KILOMETER</option>
+              <option>MLT-MILLILITRE</option>
+              <option>MTR-METERS</option>
+              <option>MTS-METRIC TONES</option>
+              <option>NOS-NUMBERS</option>
+              <option>OTH-OTHERS</option>
+              <option>PAC-PACKS</option>
+              <option>PCS-PICES</option>
+              <option>PRS-PAIRS</option>
+              <option>QTL-QUINTEL</option>
+              <option>ROL-ROLLS</option>
+              <option>SET-SETS</option>
+              <option>SQF-SQUAREFEET</option>
+              <option>SQM-SQUARE METER</option>
+              <option>SQY-SQUARE YARDS</option>
+              <option>TBS-TABLETS</option>
+              <option>TGM-TEN GROSS</option>
+              <option>THD-THOUSANDS</option>
+              <option>TON-TONNES</option>
+              <option>TUB-TUBES</option>
+              <option>UNIT-UNITS</option>
+              <option>YDS-YARDS</option>
+  
+            </select>
+          </div>
+        
+        
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Accept</button>
+          </div>
+        </div>
+      </form>
+</body>
+
+
+
+
+{% endblock %}

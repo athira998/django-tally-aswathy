@@ -17,6 +17,13 @@ urlpatterns = [
 
 
 
+    path('load_stock_group',views.load_stock_group,name='load_stock_group'),
+    path('load_stock_catagory',views.load_stock_catagory,name='load_stock_catagory'),
+    path('load_unit_creation',views.load_unit_creation,name='load_unit_creation'),
+    path('load_stock_item',views.load_stock_item,name='load_stock_item'),
+
+
+
 
     
 ]
