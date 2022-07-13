@@ -45,3 +45,10 @@ def load_unit_creation(request):
 
 def load_stock_item(request):
     return render(request,'stock_item.html')
+
+def load_company_price(request):
+    return render(request,'company_price.html')
+
+
+def load_pan_cin(request):
+    return render(request,'pan_cin.html')

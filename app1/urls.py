@@ -21,6 +21,8 @@ urlpatterns = [
     path('load_stock_catagory',views.load_stock_catagory,name='load_stock_catagory'),
     path('load_unit_creation',views.load_unit_creation,name='load_unit_creation'),
     path('load_stock_item',views.load_stock_item,name='load_stock_item'),
+    path('load_company_price',views.load_company_price,name='load_company_price'),
+    path('load_pan_cin',views.load_pan_cin,name='load_pan_cin'),
 
 
 
