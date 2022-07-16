@@ -4,7 +4,7 @@
     <style>
         .container{
             display: flex;
-            height:25vh;
+            height:35vh;
             align-items: center;
             justify-content: center;
         }
@@ -39,7 +39,7 @@
 <div class="container">
     <div class="form1"style=" background-color:rgba(0,0,0,0.3);">
         <a href="javascript:history.go(-1);" class="close">+</a>
-        <h5 style="background-color:rgb(103, 175, 220) ; color:white; text-align: center; padding: 5px 0; width:100%;">Stock Category Creation</h5>
+        <h5 style="background-color:rgb(103, 175, 220) ; color:white; text-align: center; padding: 5px 0; width:100%;">Unit Creation</h5>
         <form action="" method="post">
 
 <!-- <div class="container">
@@ -49,14 +49,22 @@
     <form action="" method="post"> -->
     
         
-        <div><p>Name</p></div>
-        <input type="text" class="form-control">
-        <div><p>(Alias)</p></div>
-        <input type="text" class="form-control">
-        <div><p>Under</p></div>
-        <select name="primary" id="primary" class="form-control">
-            <option value="primary">Primary</option>
-        </select><br><br>
+        <div><p>Type</p></div>
+        <input type="text" value="compound" class="form-control">
+        <div><p>First unit </p></div>
+        <select name="sub-ledger" id="sub-ledger" class="form-control">
+            <option>unit</option>
+           
+            </select>
+        <div><p>Conversion of</p></div>
+        <input type="number"  class="form-control">
+        <div><p>Second unit </p></div>
+        <select name="sub-ledger" id="sub-ledger" class="form-control">
+            <option>unit</option>
+           
+            </select><br><br>
+       
+        
         
         
 <button><h5>Create</h5></button>
@@ -64,6 +72,83 @@
 </div>
 </div>
 {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

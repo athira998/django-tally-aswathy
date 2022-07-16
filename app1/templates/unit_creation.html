@@ -4,7 +4,7 @@
     <style>
         .container{
             display: flex;
-            height:40vh;
+            height:35vh;
             align-items: center;
             justify-content: center;
         }
@@ -50,15 +50,18 @@
     
         
         <div><p>Type</p></div>
-        <input type="text" value="simple">
+        <select name="sub-ledger" id="sub-ledger" class="form-control">
+            <option>simple</option>
+            <option>compound</option>
+            </select>
         <div><p>Symbol </p></div>
-        <input type="text">
+        <input type="text" class="form-control">
         <div><p> Formal name</p></div>
-        <input type="text">
+        <input type="text" class="form-control">
         <div><p> Number of decimal places </p></div>
-        <input type="number">
+        <input type="number" class="form-control">
         <div><p>Unit Quantity Code (UQC)</p></div>
-            <select name="sub-ledger" id="sub-ledger">
+            <select name="sub-ledger" id="sub-ledger" class="form-control">
               <option>Not aplicable</option>
               <option>BAG-BAGS</option>
               <option>BAL-BALE</option>
@@ -103,7 +106,7 @@
               <option>YDS-YARDS</option>
                 
                  
-            </select>
+            </select><br><br>
         
            
         

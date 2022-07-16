@@ -4,7 +4,7 @@
     <style>
         .container{
             display: flex;
-            height:25vh;
+            height:45vh;
             align-items: center;
             justify-content: center;
         }
@@ -39,7 +39,7 @@
 <div class="container">
     <div class="form1"style=" background-color:rgba(0,0,0,0.3);">
         <a href="javascript:history.go(-1);" class="close">+</a>
-        <h5 style="background-color:rgb(103, 175, 220) ; color:white; text-align: center; padding: 5px 0; width:100%;">Stock Category Creation</h5>
+        <h5 style="background-color:rgb(103, 175, 220) ; color:white; text-align: center; padding: 5px 0; width:100%;">Company TDS Deductor Details</h5>
         <form action="" method="post">
 
 <!-- <div class="container">
@@ -49,17 +49,39 @@
     <form action="" method="post"> -->
     
         
-        <div><p>Name</p></div>
+        <div><p>TAN registration number</p></div>
         <input type="text" class="form-control">
-        <div><p>(Alias)</p></div>
+        <div><p>Tax deduction and collection Account Number(TAN)</p></div>
         <input type="text" class="form-control">
-        <div><p>Under</p></div>
+        <div><p>Deductor Type</p></div>
         <select name="primary" id="primary" class="form-control">
-            <option value="primary">Primary</option>
-        </select><br><br>
+            <option >Company</option>
+            <option ">Individual/HUF</option>
+        </select>
+        <div><p>Deductor branch/division</p></div>
+        <input type="text" class="form-control">
+        <div><p>Set/alter details of person responsible</p></div>
+        <select name="primary" id="primary" class="form-control">
+            <option >yes</option>
+            <option ">No</option>
+        </select>
+        <hr>
+        <h5>Rate & exemption details</h5>
+        <div><p>Ignore IT exemption limit for TDS deduction</p></div>
+        <select name="primary" id="primary" class="form-control">
+            <option >yes</option>
+            <option ">No</option>
+        </select>
+        <div><p>Active TDS for stock items</p></div>
+        <select name="primary" id="primary" class="form-control">
+            <option >yes</option>
+            <option ">No</option>
+        </select><br>
+
+
         
         
-<button><h5>Create</h5></button>
+<button><h5>Accept</h5></button>
     </form>
 </div>
 </div>

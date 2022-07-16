@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+    {% block body %}
+    {% load static %}
+    <style>
+        .enter{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+    </style>
+
+  <div class="m-0">
+    <h6 style="" class="bg-info text-light p-2 m-0 text-center">GST Details</h6>
+            <form class="p-5" style="background-color:rgba(0,0,0,.4);">
+                
+                <div class="p-3">
+                    <h2 >GST Registration details</h2>
+                <div class="row container-fluid  p-2 m-0">
+                    
+                    <div class="col-sm-2 m-0 p-0"> <label for="a">state</label></div>
+                    <div class="col-sm-3 m-0 p-0"><select name="Activate" id="e" class="form-control">
+                        <option value="No">Kerala</option> 
+                        
+                    </select></div>
+                    <div class="col-sm-7 m-0 p-0"></div>
+                </div>
+                <div class="row container-fluid  p-2 m-0">
+                    <div class="col-sm-2 m-0 p-0"> <label for="b">Registration Type</label></div>
+                    <div class="col-sm-3 m-0 p-0"> 
+                        <select name="Activate" id="e" class="form-control">
+                            <option >Composition</option> 
+                            <option >Regular</option>
+                        </select>
+                    <div class="col-sm-7 m-0 p-0"></div>
+                </div>
+                <div class="row container-fluid  p-2 m-0">
+                    <div class="col-sm-2 m-0 p-0"> <label for="b">GST Applicable from</label></div>
+                    <div class="col-sm-3 m-0 p-0"> <input type="date" class="form-control" id="a" ></div>
+                        
+                    <div class="col-sm-7 m-0 p-0"></div>
+                </div>
+                <div class="row container-fluid  p-2 m-0">
+                    <div class="col-sm-2 m-0 p-0"> <label for="b">Periodicity of GSTR1</label></div>
+                    <div class="col-sm-3 m-0 p-0"><select name="Activate" id="e" class="form-control">
+                        <option >Quarterly</option> 
+                        <option >Monthly</option>
+                    </select> </div>
+                        
+                    <div class="col-sm-7 m-0 p-0"></div>
+                </div>
+            </div>
+
+                
+                    
+                   
+                <div class="row container-fluid  p-0 m-0" style=" border: 1px solid rgba(128, 128, 128, 0.6);">
+                    <div class="col-sm-5 m-0 p-4" style=" border-right: 1px solid rgba(128, 128, 128, 0.6);">
+                        <h5 class="text-center">Additional Features</h5>
+                        <div class="row container-fluid  p-0">
+                            <div class="col-sm-6 m-0 p-0"></div>
+                            <div class="col-sm-6 m-0 p-0"></div>
+                        </div>
+
+                       
+                        <div class="row container-fluid  p-2">
+                            <div class="col-sm-6 m-0 p-0"> <label for="e">set/alter GST details</label></div>
+                            <div class="col-sm-6 m-0 p-0">
+                                <select name="Activate" id="e" class="form-control">
+                                    <option value="No">Yes</option> 
+                                    <option value="Yes">No</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row container-fluid  p-2">
+                            <div class="col-sm-6 m-0 p-0"> <label for="e">Enable tax liability on advance receipts</label></div>
+                            <div class="col-sm-6 m-0 p-0">
+                                <select name="Activate" id="e" class="form-control">
+                                    <option value="No">Yes</option> 
+                                    <option value="Yes">No</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row container-fluid  p-2">
+                            <div class="col-sm-6 m-0 p-0"> <label for="e">Enable tax liability on reverse charge</label></div>
+                            <div class="col-sm-6 m-0 p-0">
+                                <select name="Activate" id="e" class="form-control">
+                                    <option value="No">Yes</option> 
+                                    <option value="Yes">No</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row container-fluid  p-2">
+                            <div class="col-sm-6 m-0 p-0"> <label for="e">Enable GST classifications</label></div>
+                            <div class="col-sm-6 m-0 p-0">
+                                <select name="Activate" id="e" class="form-control">
+                                    <option value="No">Yes</option> 
+                                    <option value="Yes">No</option>
+                                </select>
+                            </div>
+                        </div>
+
+                       
+                        
+
+                    </div>
+                    <div class="col-sm-4 m-0 p-4" style=" border-right: 1px solid rgba(128, 128, 128, 0.6);">
+                        <h5 class="text-center">Invoice Features</h5>
+                        <div class="row container-fluid  p-2">
+                            <div class="col-sm-6 m-0 p-0"> <label for="l">e-way bill Applicable</label></div>
+                            <div class="col-sm-6 m-0 p-0">
+                                <select name="providenr" id="l" class="form-control">
+                                    <option value="No">Yes</option> 
+                                    <option value="Yes">No</option>
+                                   
+                                </select>
+                            </div>
+                        </div>
+                            <div class="row container-fluid  p-2">
+                            <div class="col-sm-6 m-0 p-0"> <label for="l">e-invoicing Applicable</label></div>
+                            <div class="col-sm-6 m-0 p-0">
+                                <select name="providenr" id="l" class="form-control">
+                                    <option value="No">Yes</option> 
+                                    <option value="Yes">No</option>
+                                   
+                                   
+                                </select>
+                            </div>
+                        </div>
+                       
+                      
+                        
+                    </div>
+                    
+                    
+                </div><br>
+                <div class="enter"><button class="btn btn-info">Accept</button></div>   
+                
+            </form>
+        </div>
+        
+        
+    {% endblock %}

@@ -1,0 +1,168 @@
+{% extends 'base.html' %}
+{% block body %}
+{% load static %}
+    <style>
+        .container{
+            display: flex;
+            height:75vh;
+            align-items: center;
+            justify-content: center;
+        }
+    .form1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        
+    }
+    form{
+        padding:30px;
+    }
+    .close {
+        position: absolute;
+        top: 3px;
+        right: 8px;
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        transform: rotate(45deg);
+        cursor: pointer;
+        text-decoration: none;
+        
+    }
+    button{
+        background-color:rgb(103, 175, 220) ;
+        color:white;
+        padding:10px 20px;
+    }
+</style>
+<div class="container">
+    <div class="form1"style=" background-color:rgba(0,0,0,0.3);">
+        <a href="javascript:history.go(-1);" class="close">+</a>
+        <h5 style="background-color:rgb(103, 175, 220) ; color:white; text-align: center; padding: 5px 0; width:100%;">Person Responsible Details</h5>
+        <form action="" method="post">
+
+<!-- <div class="container">
+<div class="form1">
+    <a href="javascript:history.go(-1);" class="close">+</a>
+    <h5 style="background-color:rgb(103, 175, 220) ; color:white; text-align: center; padding: 5px 0; width:100%;">Group Alteration(Secondary)</h5>
+    <form action="" method="post"> -->
+    
+        
+        <div><p>Name</p></div>
+        <input type="text" class="form-control">
+        <div><p>son/daughter of</p></div>
+        <input type="text" class="form-control">
+        <div><p>Designation</p></div>
+        <input type="text" class="form-control">
+        <div><p>PAN</p></div>
+        <input type="text" class="form-control">
+        <div><p>Flat no</p></div>
+        <input type="text" class="form-control">
+        <div><p>Name of the premises/building</p></div>
+        <input type="text" class="form-control">
+        <div><p>Road/street/Lane</p></div>
+        <input type="text" class="form-control">
+        <div><p>Area/Location</p></div>
+        <input type="text" class="form-control">
+        <div><p>Town/City/District</p></div>
+        <input type="text" class="form-control">
+        
+        <div><p>State</p></div>
+        <select name="primary" id="primary" class="form-control">
+            <option value="">Not Applicable</option>
+                                <option value="">Andaman & Nicobar Islands</option> 
+                                <option value="">Andhra Pradesh</option>
+                                <option value="">Arunachal Pradesh</option>
+                                <option value="">Assam</option> 
+                                <option value="">Bihar</option> 
+                                <option value="">Chandigarh</option> 
+                                <option value="">Chhattisgarh</option> 
+                                <option value="">Dadra & Nagar Haveli and Daman & Diu</option> 
+                                <option value="">Delhi</option> 
+                                <option value="">Goa</option> 
+                                <option value="">Gujarat</option> 
+                                <option value="">Haryana</option> 
+                                <option value="">Himachal Pradesh</option> 
+                                <option value="">Jammu & Kashmir</option> 
+                                <option value="">Jharkhand</option> 
+                                <option value="">Karnataka</option> 
+                                <option value="" selected>Kerala</option> 
+                                <option value="">Ladakh</option> 
+                                <option value="">Lakshadweep</option> 
+                                <option value="">Madhya Pradesh</option> 
+                                <option value="">Maharashtra</option>
+                                <option value="">Manipur</option> 
+                                <option value="">Meghalaya</option> 
+                                <option value="">Mizoram</option> 
+                                <option value="">Nagaland</option> 
+                                <option value="">Odisha</option> 
+                                <option value="">Puducherry</option> 
+                                <option value="">Punjab</option> 
+                                <option value="">Rajasthan</option> 
+                                <option value="">Sikkim</option> 
+                                <option value="">Tamil Nadu</option> 
+                                <option value="">Telangana</option> 
+                                <option value="">Tripura</option> 
+                                <option value="">Uttarakhand</option> 
+                                <option value="">Uttarakhand</option> 
+                                <option value="">West Bengal</option> 
+        </select>
+        <div><p>Pincode</p></div>
+        <input type="text" class="form-control">
+        <div><p>Mobile No</p></div>
+        <input type="text" class="form-control">
+        <div><p>STD code</p></div>
+        <input type="text" class="form-control">
+        <div><p>Telephone</p></div>
+        <input type="text" class="form-control">
+        <div><p>Email ID</p></div>
+        <input type="email" class="form-control"><br>
+        
+<button><h5>Accept</h5></button>
+    </form>
+</div>
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

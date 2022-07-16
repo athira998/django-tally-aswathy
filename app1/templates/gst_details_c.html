@@ -4,7 +4,7 @@
     <style>
         .container{
             display: flex;
-            height:25vh;
+            height:37vh;
             align-items: center;
             justify-content: center;
         }
@@ -39,7 +39,7 @@
 <div class="container">
     <div class="form1"style=" background-color:rgba(0,0,0,0.3);">
         <a href="javascript:history.go(-1);" class="close">+</a>
-        <h5 style="background-color:rgb(103, 175, 220) ; color:white; text-align: center; padding: 5px 0; width:100%;">Stock Category Creation</h5>
+        <h5 style="background-color:rgb(103, 175, 220) ; color:white; text-align: center; padding: 5px 0; width:100%;">GST Details for company</h5>
         <form action="" method="post">
 
 <!-- <div class="container">
@@ -48,18 +48,25 @@
     <h5 style="background-color:rgb(103, 175, 220) ; color:white; text-align: center; padding: 5px 0; width:100%;">Group Alteration(Secondary)</h5>
     <form action="" method="post"> -->
     
+        <div><h5>Tax details</h5>
+            <div><p>Taxability</p></div>
+            <select name="primary" id="primary" class="form-control">
+                <option >Unknown</option>
+                <option >Exempt</option>
+                <option >Nil Rated</option>
+                <option >Taxable</option>
+            </select><br><br>
+        <div><h5>Tax type  Rate</h5></div>
+        <div><p>Integrated tax</p></div>
+        <input type="text" class="form-control" value="0 %">
+        <div><p>Cess</p></div>
+        <input type="text" class="form-control" value="0 %">
+        <div><p>Kerala Flood Cess</p></div>
+        <input type="text" class="form-control" value="0 %"><br>
         
-        <div><p>Name</p></div>
-        <input type="text" class="form-control">
-        <div><p>(Alias)</p></div>
-        <input type="text" class="form-control">
-        <div><p>Under</p></div>
-        <select name="primary" id="primary" class="form-control">
-            <option value="primary">Primary</option>
-        </select><br><br>
         
         
-<button><h5>Create</h5></button>
+<button><h5>Accept</h5></button>
     </form>
 </div>
 </div>
